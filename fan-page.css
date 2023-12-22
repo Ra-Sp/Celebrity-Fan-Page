@@ -1,5 +1,9 @@
 body{
     background-color: rgb(15, 17, 17);
+    background-image: url('./bg_image.jpg');
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
     color: aliceblue;
 }
 
@@ -21,9 +25,64 @@ body{
 }
 
 a{
-    color: rgb(44, 54, 54);
+    color: rgb(99, 168, 168);
+    list-style: none;
+    text-decoration: none;
 }
 
 a:hover{
-    color: rgb(75, 95, 95);
+    color: rgb(99, 240, 240);
+}
+
+#TopTracks-heading{
+    padding: 10px;
+    font-size: 2em;
+}
+
+.TopTracks{
+    display: flex;
+    justify-content: center;
+}
+
+#tracks{
+    width: 80%;
+}
+
+th, td{
+    padding: 8px;
+    text-align: left;
+}
+
+th{
+    line-height: 2;
+    font-size:x-large;
+}
+
+td{
+    line-height: 1.5;
+    font-size: larger;
+}
+
+.gallery{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 250px;
+    height: 350px;
+}
+
+#col-1{
+    padding-right: 750px;
+}
+
+.follow{
+    padding: 20px;
+    font-size: larger;
+}
+
+.follow-links{
+    padding: 50px;
+    font-size: 2rem;
 }

@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <link rel="stylesheet" type="text/css" href="./fan-page.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <title>The Shawn Mendes Fan Page</title>
 </head>
 
 <body>
-    <h1 id="heading">The Shawn Mendes Fan Page</h1>
+    <h1 id="heading" onload="typeText"></h1>
 
     <h2 id="about-heading">About Shawn Mendes</h2>
     <p class="about">Shawn Peter Raul Mendes is a Canadian singer-songwriter. He gained a following in 2013, when he
@@ -140,6 +140,26 @@
         <a href="https://twitter.com/ShawnMendes" class="follow-links"><i class="fa-brands fa-x-twitter"></i></a>
         <a href="https://www.shawnmendesofficial.com/" class="follow-links"><i class="fa-solid fa-globe"></i></a>
     </div>
+
+    <script>
+        var i = 0;
+        var text = "The Shawn Mendes Fan Page!";
+        var speed = 100;
+
+        window.onload = function () {
+            typeText();
+        };
+
+        function typeText() {
+            if (i < text.length) {
+                document.getElementById("heading").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeText, speed)
+            }
+        }
+
+
+    </script>
 
 </body>
 
